@@ -173,15 +173,15 @@ section {
   background-image: url(../images/weather_api.jpeg);
 }
 
-.itm2:nth-of-type(2) {
+.itm1:nth-of-type(2) {
   background-image: url(../images/analog_clock1.png);
 }
 
-.itm3:nth-of-type(3) {
+.itm1:nth-of-type(3) {
   background-image: url(../images/qr_code.png);
 }
 
-.itm1:first-of-type {
+ .itm2:first-of-type {
   background-image: url(../images/nextjs_hero.jpeg);
 }
 
@@ -189,9 +189,9 @@ section {
   background-image: url(../images/react_hero.png);
 }
 
-.itm3:nth-of-type(3) {
+.itm2:nth-of-type(3) {
   background-image: url(../images/laravel.png);
-}
+} 
 .item > span {
   width: 80%;
   user-select: none;

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Work</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="header_section">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">Only Work</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </div>
+    <div class="top_section">
+        <h1 class="my_tital">Projects</h1>
+
+        <center>
+            <section>
+                <div class="item itm1"><span>WEAHTER API</span></div>
+                <div class="item itm2"><span>ANALOG CLOCK</span></div>
+                <div class="item itm3"><span>QR CODE</div>
+            </section>
+        </center>
+    </div>
+    <center>
+        <section class="mdeian_desplay_none wrapper">
+            <a href="#weather_api"><button class="glow-on-hover" type="button">Click me</button></a>
+            <a href="#analog_clock"><button class="glow-on-hover" type="button">Click me</button></a>
+            <a href="#qr_code"><button class="glow-on-hover" type="button">Click me</button></a>
+        </section>
+    </center>
+    <br>
+    <!-- background  -->
+    <!-- <div class="project_heading">  -->
+    <div class="box box-1">
+        <h2>Hi , <span class="auto-type"></span></h2>
+    </div>
+    <div class="hiClass">
+        <h4>
+            <span style="color:  #e7c728">Thanks </span><span style="color: aqua"> For your Time</span>
+        </h4>
+    </div>
+
+    <div class="project_box" id="analog_clock">
+        <div class="clock">
+            <div id="hour" class="hand hour">
+                <i></i>
+            </div>
+            <div id="min" class="hand minute">
+                <i></i>
+            </div>
+            <div id="sec" class="hand second">
+                <i></i>
+            </div>
+            <div class="numbers">
+                <div class="number" style="--rotate: 30deg;">4</div>
+                <div class="number" style="--rotate: 60deg;">5</div>
+                <div class="number" style="--rotate: 90deg;">6</div>
+                <div class="number" style="--rotate: 120deg;">7</div>
+                <div class="number" style="--rotate: 150deg;">8</div>
+                <div class="number" style="--rotate: 180deg;">9</div>
+                <div class="number" style="--rotate: 210deg;">10</div>
+                <div class="number" style="--rotate: 240deg;">11</div>
+                <div class="number" style="--rotate: 270deg;">12</div>
+                <div class="number" style="--rotate: 300deg;">1</div>
+                <div class="number" style="--rotate: 330deg;">2</div>
+                <div class="number" style="--rotate: 360deg;">3</div>
+            </div>
+        </div>
+        <h1 class="my_tital">Analog clock</h1>
+    </div>
+    <!--  Weather Api -->
+    <div class="project_box" id="weather_api">
+        <div class="search-box">
+            <input type="text" placeholder="Enter your location" class="input-box" />
+            <button class="" id="searchBtn">Click</button>
+        </div>
+        <div class="location-not-found">
+            <h1>Sorry, Location name is not correct!</h1>
+            <img src="images/404.png" alt="404 Error" />
+        </div>
+        <div class="weather-body">
+            <img src="images/cloud.png" alt="Weather Image" class="weather-img" />
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">light rain</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fas fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="my_tital">Weather api</h1>
+    </div>
+    </div>
+    <!-- *** -->
+
+    <!-- qr_code -->
+    <div class="project_box" id="qr_code">
+        <div class="qr-header">
+            <input type="text" placeholder="Type your text or Number" id="qr_text" />
+            <div>
+                <label for="sizes">Select Size:</label>
+                <select id="sizes">
+                    <option value="100">100x100</option>
+                    <option value="200">200x200</option>
+                </select>
+            </div>
+        </div>
+        <div class="qr-body"></div>
+        <div class="qr_taskbar">
+            <a href="" id="generate_Button">Generate</a>
+            <a href="" id="download_Button" download="QR-Code.png">Download</a>
+        </div>
+        <h1 class="my_tital">qe code generator</h1>
+    </div>
+    <!-- stop Watch -->
+    <div class="project_box">
+        <div class="stopwatch-container">
+            <div class="time-display" id="timerDisplay">00:00:00</div>
+            <div class="controls">
+                <button id="startBtn">Start</button>
+                <button id="stopBtn">Stop</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+            <h1 class="my_tital">Stop Watch</h1>
+        </div>
+    </div>
+    <div class="cube">
+        <div class="cube__face cube-face--front">
+            <span class="text">Front End Back End</span>
+        </div>
+    </div>
+    <!-- work  -->
+    <div class="project_box">
+        <div class="project">
+            <img src="images/React_Weather_AI_APP.png" alt="Project 1 Thumbnail">
+            <h1 class="my_tital">ReactJS Weather App API</h1>
+        </div>
+    </div>
+    <!--  -->
+    <div class="project_box">
+        <div class="project">
+            <img src="images/last_pass_Proroject_1.png" alt="Project 4 Thumbnail">
+            <h1 class="my_tital">Application for the automated storage of vehicle
+                charging station-specific data</h1>
+        </div>
+    </div>
+    <!--  -->
+    <div class="project_box">
+        <div class="project">
+            <img src="images/Elektro_Manager_LasstPass_Data_Entry.png" alt="Project 1 Thumbnail">
+            <h1 class="my_tital">Application for vehicle charging station-specific data</h1>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="project_box">
+        <div class="project">
+            <img src="images/web_projects.png" alt="Project 8 Thumbnail">
+            <h1 class="my_tital">The project code is available on demand</h1>
+
+        </div>
+    </div>
+    <!--  -->
+    <div class="project_box">
+        <!-- <h3>Project 1</h3> -->
+        <div class="project">
+            <img src="images/Rai_Pizza.png" alt="Project 9 Thumbnail">
+            <h1 class="my_tital">The project code is available on demand</h1>
+
+        </div>
+    </div>
+    <!--  -->
+    <div class="project_box">
+        <div class="project">
+            <h1 class="my_tital">Many More Reacts + Next.js Projects </h1>
+            <img src="images/website1.png" alt="Project 10 Thumbnail">
+            <h1 class="my_tital">The project code is available on demand </h1>
+
+        </div>
+    </div>
+
+    <a href="#top" class="to-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+
+    <!--  footor + copyright section start -->
+    <div class="copyright_section">
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Navigation Links -->
+                <div class="footer-contact">
+                    <ul class="footer-nav">
+                        <div class="contact-item">
+                            <a href="index.html"><i class="fas fa-house"></i> Home</a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="project.html"><i class="fas fa-pen-to-square"></i> project</a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="about.html"><i class="fas fa-video"></i> About</a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>72555 Heineman, Metzingen,
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i> sawera@info.com
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i> +123 456 789
+                    </div>
+                </div>
+                <!-- Social Media Links -->
+                <div class="ooter-contact">
+                    <ul class="footer-nav">
+                        <div class="contact-item">
+                            <a href="#"><i class=" fab fa-square-youtube"></i> Youtube</a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+                        </div>
+                </div>
+                <!-- Contact Information -->
+            </div>
+            <div class="container">
+                <p class="copyright_text">
+                    2024 All Rights Reserved. Design by
+                    <a href="#">Soft Outlet Metzingen </a> developed by
+                    <a href=""> Mnabi</a>
+                </p>
+            </div>
+    </div>
+    </footer>
+    </div>
+    </div>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var typed = new Typed('.auto-type', {
+
+            strings: [' Some online activities', ' The project code is available on demand'],
+            typeSpeed: 130,
+            backSpeed: 130,
+            loop: true,
+        });
+    </script>
+
+</body>
+
+</html>
